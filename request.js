@@ -594,6 +594,9 @@ Request.prototype.getNewAgent = function () {
   if (self.ciphers) {
     options.ciphers = self.ciphers
   }
+  if (self.ecdhCurve) {
+    options.ecdhCurve = self.ecdhCurve
+  }
   if (self.secureProtocol) {
     options.secureProtocol = self.secureProtocol
   }
